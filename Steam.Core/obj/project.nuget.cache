@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JYIz52HRwYgo/AKrAC/ab9fdorEmhYwar1YQ9AkMX/TcomueH1i8txBznbRBShw1f5lFY445Ku1YpmowFQqymw==",
+  "dgSpecHash": "7f8iAVmolnicZ6XA5u9oMKV/+ur0rQdYKdJlkvjHA0Q2rrgz28T0ipecZTrbI3M/nnYZdFR+yB62whIMka+rMA==",
   "success": true,
-  "projectFilePath": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/SteamTestFrame/SteamTestFrame.csproj",
+  "projectFilePath": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/Steam.Core/Steam.Core.csproj",
   "expectedPackageFiles": [
     "/Users/andrewvolodko/.nuget/packages/microsoft.csharp/4.3.0/microsoft.csharp.4.3.0.nupkg.sha512",
     "/Users/andrewvolodko/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",

@@ -3318,6 +3318,7 @@
     "net5.0": [
       "NUnit >= 3.13.2",
       "NUnit3TestAdapter >= 4.0.0",
+      "Newtonsoft.Json >= 10.0.3",
       "Selenium.Support >= 3.141.0",
       "Selenium.WebDriver >= 3.141.0",
       "Selenium.WebDriver.ChromeDriver >= 92.0.4515.10700"
@@ -3329,11 +3330,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/SteamTestFrame/SteamTestFrame.csproj",
-      "projectName": "SteamTestFrame",
-      "projectPath": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/SteamTestFrame/SteamTestFrame.csproj",
+      "projectUniqueName": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/Steam.Core/Steam.Core.csproj",
+      "projectName": "Steam.Core",
+      "projectPath": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/Steam.Core/Steam.Core.csproj",
       "packagesPath": "/Users/andrewvolodko/.nuget/packages/",
-      "outputPath": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/SteamTestFrame/obj/",
+      "outputPath": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/Steam.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/andrewvolodko/.nuget/NuGet/NuGet.Config"
@@ -3367,6 +3368,10 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[4.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[10.0.3, )"
           },
           "Selenium.Support": {
             "target": "Package",
