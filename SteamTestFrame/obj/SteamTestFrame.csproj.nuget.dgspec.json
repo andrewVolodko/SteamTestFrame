@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Files/Work/SteamFrame/SteamTestFrame/SteamTestFrame/SteamTestFrame.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Files/Work/SteamFrame/SteamTestFrame/SteamTestFrame/SteamTestFrame.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/SteamTestFrame/SteamTestFrame.csproj",
+        "projectName": "SteamTestFrame",
+        "projectPath": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/SteamTestFrame/SteamTestFrame.csproj",
+        "packagesPath": "/Users/andrewvolodko/.nuget/packages/",
+        "outputPath": "/Volumes/Files/Work/SteamFrame/SteamTestFrame/SteamTestFrame/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/andrewvolodko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[92.0.4515.10700, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
