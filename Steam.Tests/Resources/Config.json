@@ -1,4 +1,5 @@
 {
   "baseUrl": "https://store.steampowered.com",
-  "browser": "chrome"
+  "browser": "chrome",
+  "timeout": 10
 }

@@ -10,5 +10,6 @@ namespace SteamTestFrame.Core
         public static string GetBrowserName() => DataFile["browser"].ToString();
 
         public static string GetBaseUrl() => DataFile["baseUrl"].ToString();
+        public static int GetTimeOut() => int.Parse(DataFile["timeout"].ToString());
     }
 }
