@@ -5,12 +5,12 @@ namespace SteamTestFrame.BaseEntities
 {
     public abstract class BaseStep<TPage> where TPage: BasePage
     {
-        protected readonly BrowserService _browserService;
+        protected readonly BrowserService BrowserService;
         protected TPage Page;
 
         public BaseStep(BrowserService browserService, bool openPageByUrl)
         {
-            _browserService = browserService;
+            BrowserService = browserService;
             GetPageInstance();
 
             if(openPageByUrl)
@@ -19,6 +19,12 @@ namespace SteamTestFrame.BaseEntities
             Page.VerifyCorrectPageOpened();
         }
 
-        public TPage GetPageInstance() => Page ??= (TPage) Activator.CreateInstance(typeof(TPage), _browserService);
+        public TPage GetPageInstance() => Page ??= (TPage) Activator.CreateInstance(typeof(TPage), BrowserService);
+
+        public TPage OpenPage()
+        {
+            Page.Open();
+            return (TPage) Activator.CreateInstance(typeof(TPage), BrowserService);
+        }
     }
 }

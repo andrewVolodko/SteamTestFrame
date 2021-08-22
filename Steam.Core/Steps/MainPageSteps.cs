@@ -10,9 +10,10 @@ namespace SteamTestFrame.Steps
         {
         }
 
-        public void OpenAboutPage()
+        public AboutPageSteps OpenAboutPage()
         {
             Page.GetInstallBtn().Click();
+            return new AboutPageSteps(BrowserService, false);
         }
     }
 }

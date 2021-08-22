@@ -33,14 +33,15 @@ namespace SteamTestFrame.BaseEntities
 
         public void Open()
         {
-            if (_path != null)
-                BrowserService.GetDriver().Navigate().GoToUrl(_baseUrl + _path);
+            try
+            {
+                if (_path != null)
+                    BrowserService.GetDriver().Navigate().GoToUrl(_baseUrl + _path);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
-        public void OpenAndVerifyCorrectPageOpened() {
-            Open();
-            VerifyCorrectPageOpened();
-        }
-
-
     }
 }

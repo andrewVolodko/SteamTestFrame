@@ -6,14 +6,14 @@ namespace SteamTestFrame.Pages
 {
     public class MainPage : BasePage
     {
-        private readonly By _installBtnBy = By.ClassName("header_instllsteam_btn_content");
+        private static readonly By InstallBtnBy = By.ClassName("header_instllsteam_btn_content");
 
         public MainPage(BrowserService browserService) : base(browserService, "")
         {
         }
 
-        protected override By GetCorrectPageOpenedIndicatorElLocator() => _installBtnBy;
+        protected override By GetCorrectPageOpenedIndicatorElLocator() => InstallBtnBy;
 
-        public IWebElement GetInstallBtn() => BrowserService.GetDriver().FindElement(_installBtnBy);
+        public IWebElement GetInstallBtn() => BrowserService.GetDriver().FindElement(InstallBtnBy);
     }
 }
