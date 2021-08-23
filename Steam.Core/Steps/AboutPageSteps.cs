@@ -7,10 +7,14 @@ namespace SteamTestFrame.Steps
 {
     public class AboutPageSteps : BaseStep<AboutPage>
     {
-        public AboutPageSteps(BrowserService browserService, bool openPageByUrl) : base(browserService, openPageByUrl)
+        public AboutPageSteps(BrowserService browserService, bool openPageByUrl = false) : base(browserService, openPageByUrl)
         {
         }
 
-        public void DownloadInstaller(Platform platform) => Page.GetInstallerBtn(platform).Click();
+        public AboutPageSteps DownloadInstaller(Platform platform, string path)
+        {
+            Page.GetInstallerBtn(platform).Click();
+            return this;
+        }
     }
 }

@@ -4,6 +4,8 @@
         <TargetFramework>net5.0</TargetFramework>
 
         <IsPackable>false</IsPackable>
+
+        <OutputType>Library</OutputType>
     </PropertyGroup>
 
     <ItemGroup>
@@ -28,7 +30,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Tests" />
+      <Folder Include="Resources\Downloads" />
     </ItemGroup>
 
 </Project>

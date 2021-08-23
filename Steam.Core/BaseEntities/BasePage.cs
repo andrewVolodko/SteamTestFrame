@@ -8,10 +8,10 @@ namespace SteamTestFrame.BaseEntities
     public abstract class BasePage
     {
         protected readonly BrowserService BrowserService;
-        private static readonly string _baseUrl = PropertyReader.GetBaseUrl();
+        private static readonly string BaseUrl = PropertyReader.GetBaseUrl();
         private readonly string _path;
 
-        protected BasePage(BrowserService browserService, string path)
+        protected BasePage(BrowserService browserService, string path = "")
         {
             BrowserService = browserService;
             _path = path;
@@ -36,7 +36,7 @@ namespace SteamTestFrame.BaseEntities
             try
             {
                 if (_path != null)
-                    BrowserService.GetDriver().Navigate().GoToUrl(_baseUrl + _path);
+                    BrowserService.GetDriver().Navigate().GoToUrl(BaseUrl + _path);
             }
             catch (Exception e)
             {

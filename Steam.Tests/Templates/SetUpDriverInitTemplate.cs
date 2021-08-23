@@ -4,7 +4,7 @@ using SteamTestFrame.Core;
 
 namespace Steam.Tests.Templates
 {
-    public abstract class BaseTestSetUpDriverInit : BaseTest
+    public abstract class SetUpDriverInitTemplate : BaseTest
     {
         [SetUp]
         public void SetUpDriver() => BrowserService = new BrowserService();

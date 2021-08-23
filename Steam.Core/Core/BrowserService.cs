@@ -18,6 +18,8 @@ namespace SteamTestFrame.Core
             };
         }
 
+        public BrowserService(IWebDriver driver) => _driver = driver;
+
         public IWebDriver GetDriver() => _driver;
 
         public Waiter GetWait() => new Waiter(this);

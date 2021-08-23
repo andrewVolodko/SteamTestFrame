@@ -6,9 +6,9 @@ namespace SteamTestFrame.Pages
 {
     public class MainPage : BasePage
     {
-        private static readonly By InstallBtnBy = By.ClassName("header_instllsteam_btn_content");
+        private static readonly By InstallBtnBy = By.ClassName("header_installsteam_btn_content");
 
-        public MainPage(BrowserService browserService) : base(browserService, "")
+        public MainPage(BrowserService browserService) : base(browserService)
         {
         }
 
