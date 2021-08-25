@@ -8,15 +8,14 @@ namespace SteamTestFrame.Utils
     {
         public static bool VerifyFileExists(string filePath, uint timeoutSeconds = 60, uint pollingIntervalSeconds = 1)
         {
-            bool fileExists;
             do
             {
-                fileExists = File.Exists(filePath);
+                if (File.Exists(filePath)) return true;
                 Thread.Sleep(TimeSpan.FromSeconds(pollingIntervalSeconds));
                 timeoutSeconds -= pollingIntervalSeconds;
-            } while (!fileExists && timeoutSeconds > 0);
+            } while (timeoutSeconds > 0);
 
-            return fileExists;
+            return false;
         }
 
         public static void DeleteFile(string filePath) => File.Delete(filePath);
