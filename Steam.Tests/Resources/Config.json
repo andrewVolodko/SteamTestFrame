@@ -5,6 +5,6 @@
   "installerFilesNames": {
     "mac": "steam.dmg",
     "windows": "SteamSetup.exe",
-    "linux": "steam.deb"
+    "linux": "steam_latest.deb"
   }
 }

@@ -1,4 +1,3 @@
-using System;
 using OpenQA.Selenium;
 using SteamTestFrame.BaseEntities;
 using SteamTestFrame.Core;
@@ -19,6 +18,10 @@ namespace SteamTestFrame.Pages
 
         public IWebElement GetInstallerBtn(Platform platform) =>
             BrowserService.GetDriver().FindElement(AboutGreetingContainerBy)
-                .FindElement(By.XPath(string.Format(InstallerLinkPartialXpath, PropertyReader.GetInstallerFileName(platform))));
+                .FindElement(By.XPath(string.Format(
+                    InstallerLinkPartialXpath,
+                    platform == Platform.Linux ?
+                        "steam.deb" :
+                        PropertyReader.GetInstallerFileName(platform))));
     }
 }
